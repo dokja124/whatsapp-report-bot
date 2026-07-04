@@ -91,7 +91,7 @@ Use /report to start mass reporting!`;
         });
         
         this.bot.sendMessage(chatId, 
-            '📱 *Step 1/5:* Enter the WhatsApp number you want to report\n\nPlease include country code:\n\n*Example:* +1234567890',
+            '📱 *Step 1/5:* Enter the WhatsApp number you want to report\n\nPlease include country code:\n\n*Example:* +2250798325579',
             { parse_mode: 'Markdown' }
         ).catch(error => console.error('Error asking for number:', error));
     }
@@ -197,7 +197,7 @@ Ensure your SMTP settings are configured in the .env file.`;
 
     handlePhoneNumber(chatId, text, session) {
         if (!this.reportService.isValidPhoneNumber(text)) {
-            this.bot.sendMessage(chatId, '❌ Invalid phone number format. Please enter a valid WhatsApp number with country code:\n\n*Example:* +1234567890', { parse_mode: 'Markdown' })
+            this.bot.sendMessage(chatId, '❌ Invalid phone number format. Please enter a valid WhatsApp number with country code:\n\n*Example:* +2250798325579', { parse_mode: 'Markdown' })
                 .catch(error => console.error('Error validating number:', error));
             return;
         }
