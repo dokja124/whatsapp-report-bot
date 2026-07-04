@@ -78,7 +78,7 @@ const config = {
     
     // ==================== VALIDATION RULES ====================
     VALIDATION: {
-        PHONE_NUMBER_MIN_LENGTH: 8,
+        PHONE_NUMBER_MIN_LENGTH: 5,
         PHONE_NUMBER_MAX_LENGTH: 15,
         DESCRIPTION_MIN_LENGTH: 20,
         DESCRIPTION_MAX_LENGTH: 1000,
